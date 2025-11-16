@@ -1,4 +1,4 @@
-# Week-3&4:
+# Week-4: Develop mobile apps with login and welcome screens on submission validate the user details, on success navigate to welcome screen
 
 MainActivity.java
 
@@ -74,25 +74,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
-RegisterSuccessActivity.java(EXP 3)
-
-import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
-public class RegisterSuccessActivity extends AppCompatActivity {
-    
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registersuccess);
-    }
-}
-
-
-RegisterSuccessActivity.java(EXP 4)
+RegisterSuccessActivity.java
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -247,6 +229,7 @@ activity_main.xml
         android:layout_marginRight="168dp"
         android:layout_marginBottom="245dp"
         android:text="Sign Up" />
+
 </RelativeLayout>
 
 
@@ -284,10 +267,11 @@ activity_registersuccess.xml
         android:layout_marginBottom="245dp"
         android:text="Login" />
 
-
 </RelativeLayout>
 
+
 activity_login.xml
+
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -349,8 +333,12 @@ activity_login.xml
         android:layout_marginRight="168dp"
         android:layout_marginBottom="245dp"
         android:text="Login " />
+
 </RelativeLayout>
+
+
 activity_welcome.xml
+
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -371,6 +359,7 @@ activity_welcome.xml
         android:text="WELCOME TO CMRIT"
         android:textSize="36sp"
         android:textStyle="bold" />
+
 </RelativeLayout>
 
 
