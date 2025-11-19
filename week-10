@@ -1,6 +1,7 @@
 # Week-10: Design a form to get data at the client side from the user and access this data on the server by using the POST request
 
 app.py
+
 from flask import Flask, redirect, url_for, request,render_template
 app = Flask(__name__)
 @app.route('/')
@@ -18,7 +19,7 @@ def login():
       user = request.args.get('nm')
       return redirect(url_for('success',name = user))
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run()
 
 
 login.html
