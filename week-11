@@ -3,14 +3,11 @@
 app.py
 
 from flask import Flask, render_template, request
-
 app = Flask(__name__)
 users = {'cmrit': '123', 'mallreddy': 'abc', 'hyd': 'abc'}
-
 @app.route('/')
 def login_page():
     return render_template('login.html')
-
 @app.route('/login', methods=['POST'])
 def login():
     name = request.form.get('username')
@@ -23,7 +20,7 @@ def login():
         return render_template('home.html', name=name)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
 
 login.html
